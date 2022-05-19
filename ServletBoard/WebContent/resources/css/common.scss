@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import './color.scss';
+
+
+html {
+  font-size: 12px;
+}
+body {
+  min-width: 320px;
+  background-color: #000;
+  color: $white;
+}
+@media screen and (min-width:750px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width:1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  padding: 0 4%;
+  .navbar {
+    height: 68px;
+    .navbar-brand {
+      .logo {
+        width: 7rem;
+      }
+    }
+    
+    .nav-item {
+      font-size: 1.1rem;
+      font-weight: 400;
+      .nav-link.active {
+        font-weight: bold;
+      }
+    }
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: $white;
+    &:hover {
+      color: $font-gray;
+    }
+  }
+  @media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .7rem;
+        padding-left: 0.7rem;
+    }
+  }
+}
+#footer {
+  max-width: 980px;
+  margin: 20px auto 0;
+  padding: 3rem 4% 4rem;
+  color: grey;
+  .copy-text-block {
+    padding-top: .8rem;
+    a {
+      color: grey;
+    }
+  }
+}
+.btn {
+  &.btn-xlg {
+    padding: 0.5em 1.2em;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  &.hasLabel {
+    span {
+      padding-left: 10px;
+    }
+  }
+}
+
+.table {
+  color: $white;
+  &>:not(caption)>*>* {
+    padding: 1rem 0.5rem;
+}
+  colgroup {
+    border-top: 0;
+  }
+  tr {
+    text-align: center;
+  }
+  th,
+  td {
+    vertical-align: middle;
+  }
+  .titleImg {
+    width: 100%;
+  }
+}
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-center {
+  text-align: center;
+}

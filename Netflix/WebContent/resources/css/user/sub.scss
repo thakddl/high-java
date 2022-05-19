@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import '../color.scss';
+
+.main {
+  padding-top: 100px;
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 100px 4% 4rem;
+}
+.titleWrap {
+  .pageTitle {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+}
+.table {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.dataTables_filter {
+  text-align: right;
+  padding-bottom: 1rem;
+  input {
+    display: inline-block;
+    background-color: transparent;
+    border-bottom: #cccccc99;
+  }
+}
+.dataTables_paginate {
+  text-align: right;
+  color: #ccc;
+  a {
+    padding: 1rem;
+    color: #ccc;
+  }
+}

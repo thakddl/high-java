@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>멜론 클론 코딩</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="underLine light" style="margin-bottom: 8px;">
+      <div class="headerWrap flexBox jc-space-between">
+        <nav class="tnb">
+          <a href="#" title="멜론티켓" target="_blank">멜론티켓</a>
+        </nav>
+        <nav class="tnb sideLine">
+          <a href="#" title="이용권구매" target="_blank">이용권구매</a>
+          <a href="#" title="멜론혜택관" target="_blank">멜론혜택관</a>
+          <a href="#" title="이벤트" target="_blank">이벤트</a>
+        </nav>
+      </div>
+    </div>
+    <div class="underLine dark">
+      <div class="headerWrap flexBox jc-space-between  ai-center">
+        <div class="flexBox jc-space-between ai-center" style="flex-grow: 1; flex-wrap: nowrap;">
+          <h1 id="homeLogo">
+            <a href="#" title="MelOn 로고 - 홈으로 이동" target="_blank">멜론</a>
+          </h1>
+          <fieldset class="searchBox">
+            <input class="searchBar" type="text" placeholder="[시대별 차트] 연도별로 보는 그 시절 유행곡" />
+            <input class="searchBtn" type="button" value="검색" />
+          </fieldset>
+          <div class="hotBox flexBox ai-center">
+            <span class="label">급상승</span>
+            <ul class="slideBox" style="flex-grow: 1;">
+              <li>
+                <a href="#" title="아이유" target="_blank">2. 아이유</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="bannerBox">
+          <li><a href="#" title="할인" target="_blank"><img src="./images/imgUrl20211208062112.png" alt="할인"></a></li>
+        </ul>
+      </div>
+      <div class="headerWrap flexBox jc-space-between">
+        <nav id="mainMenu">
+          <a href="#" title="멜론차트" target="_blank">멜론차트</a>
+          <a href="#" title="최신음악" target="_blank">최신음악</a>
+          <a href="#" title="장르음악" target="_blank">장르음악</a>
+          <a href="#" title="멜론DJ" target="_blank">멜론DJ</a>
+          <a href="#" title="멜론TV" target="_blank">멜론TV</a>
+          <a href="#" title="스타포스트" target="_blank">스타포스트</a>
+          <a href="#" title="매거진" target="_blank">매거진</a>
+          <a href="#" title="뮤직어워드" target="_blank">뮤직어워드</a>
+          <a href="#" title="어학" target="_blank">어학</a>
+        </nav>
+        <nav id="myMenu">
+          <a href="#" title="마이뮤직" target="_blank">마이뮤직</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="bodyWrap">
+    <section class="contentsBox flexBox ai-end">
+      <div class="content leftBox flexBox">
+        <div class="titleBox" style="width: 100%;">
+          <h2 class="conTitle"><a href="" title="최신앨범" target="_blank">최신 앨범</a></h2>
+          <!-- <div class="infoBox"></div> -->
+        </div>
+        <ul class="cardBox">
+          <li class="cardItem hoverItem">
+            <img src="./images/10803759_20211206155018_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+          <li class="cardItem hoverItem hoverItem">
+            <img src="./images/10805238_20211207144558_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+          <li class="cardItem hoverItem">
+            <img src="./images/10804190_20211206171843_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+          <li class="cardItem hoverItem">
+            <img src="./images/10804888_20211207113404_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+          <li class="cardItem hoverItem">
+            <img src="./images/10805063_20211207122513_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+          <li class="cardItem hoverItem">
+            <img src="./images/10805228_20211207144038_500.jpg" alt="">
+            <p class="hoverEffect">
+              <a class="thumbImg" href="" title="앨범 바로가기">
+                <span class="title">그남자 그여자</span>
+                <span>신용재</span>
+              </a>
+            </p>
+          </li>
+        </ul>
+        <ul id="posterSlide">
+          <li><a href=""><img width="236" height="315"
+                src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211209121932.png/melon/quality/80" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="rightBox">
+        <div id="loginBox">
+          <p class="titleBox flexBox jc-space-between">
+            <span class="title">멜론을 더 안전하게 이용하세요.</span>
+            <span><a href="">회원가입</a></span>
+          </p>
+          <input class="btn green full" type="button" value="로그인">
+        </div>
+        <figure class="ad">
+          <a href="" title="멜론티켓 예매하기" target="_blank">
+            <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211118110053.png/melon/quality/80"
+              alt="환희 소극장 콘서트">
+          </a>
+        </figure>
+      </div>
+    </section>
+    <section class="contentsBox flexBox ai-start">
+      <div class="leftBox flexBox pr30">
+        <div class="titleBox underLine">
+          <h2 class="conTitle">인기 있어요<span>지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.</span></h2>
+          <!-- <div class="infoBox"></div> -->
+        </div>
+        <ul class="cardBox gap16">
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+          <li class="cardItem issueItem">
+            <a class="thumbImg" href="" title="앨범 바로가기">
+              <img src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20211206115104.jpg/melon/quality/80"
+                alt="뮤비 썸네일">
+              <span class="playTime">
+                <strong>재생시간</strong>
+                <span class="time">11:31</span>
+              </span>
+            </a>
+            <div class="infoBox">
+              <a href="">
+                <span class="title">'스트로베리 문' 최초 공개!</span>
+                <span>[MMA2021] 아이유</span>
+              </a>
+              <p>
+                <a class="color-green" href=""><span>멜론TV</span></a>
+                <span>조회 124,054</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="rightBox">
+        <div class="titleBox flexBox jc-space-between ai-end">
+          <h2 class="conTitle"><a href="" title="멜론차트" target="_blank">멜론차트</a></h2>
+          <p class="infoBox">2021.12.09 <span>10:00</span> 기준</p>
+        </div>
+        <div class="listBox">
+          <ul class="tabList flexBox">
+            <li class="active">TOP100</li>
+            <li>POP</li>
+            <li>☆ 아티스트</li>
+          </ul>
+          <ul class="rankList">
+            <li class="rankItem odd">
+              <div class="rankNum">
+                <span class="rank">1</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/107/98/794/10798794_20211201113915_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem">
+              <div class="rankNum">
+                <span class="rank">2</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/107/35/654/10735654_20211008114339_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">artist</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem odd">
+              <div class="rankNum">
+                <span class="rank">3</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem">
+              <div class="rankNum">
+                <span class="rank">4</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem odd">
+              <div class="rankNum">
+                <span class="rank">5</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem">
+              <div class="rankNum">
+                <span class="rank">6</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem odd">
+              <div class="rankNum">
+                <span class="rank">7</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem">
+              <div class="rankNum">
+                <span class="rank">8</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem odd">
+              <div class="rankNum">
+                <span class="rank">9</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+            <li class="rankItem">
+              <div class="rankNum">
+                <span class="rank">10</span>
+                <span class="ranking">0</span>
+              </div>
+              <div class="rankInfo">
+                <img class="album" src="https://cdnimg.melon.co.kr/cm2/album/images/108/10/162/10810162_20211210171704_500.jpg/melon/quality/80/resize/48/optimize" alt="앨범사진">
+                <p class="textBox">
+                  <span class="song"><a href="">가나다</a></span>
+                  <span class="artist"><a href="">라마바사</a></span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <nav class="fnb">
+      <div class="footerWrap">
+        <a href="#" title="멜론6.0 둘러보기" target="_blank">멜론6.0 둘러보기</a>
+        <a href="#" title="멜론 스튜디오" target="_blank">멜론 스튜디오</a>
+        <a href="#" title="Windows 플레이어" target="_blank">Windows 플레이어</a>
+        <a href="#" title="Mac 플레이어" target="_blank">Mac 플레이어</a>
+        <a href="#" title="iPad" target="_blank">iPad</a>
+        <a href="#" title="고객센터" target="_blank">고객센터</a>
+      </div>
+    </nav>
+    <div class="footerWrap">
+      <nav class="footerPolicy">
+        <a href="#" title="이용약관 " target="_blank">이용약관</a>
+        <a href="#" title="위치기반서비스 이용약관 " target="_blank"><strong>위치기반서비스 이용약관</strong></a>
+        <a href="#" title="개인정보처리방침 " target="_blank"><strong>개인정보처리방침</strong></a>
+        <a href="#" title="청소년보호정책" target="_blank">청소년보호정책</a>
+        <a href="#" title="제휴/프로모션문의">제휴/프로모션문의</a>
+        <a href="#" title="이메일주소무단수집거부" target="_blank">이메일주소무단수집거부</a>
+        <a href="#" title="파트너센터" target="_blank">파트너센터</a>
+      </nav>
+      <p class="footerInfo">
+        <span class="first"><strong>(주)카카오엔터테인먼트</strong>&nbsp;&nbsp;경기도 성남시 분당구 판교역로 221</span>
+        <span>대표이사 : 이진수, 김성수</span>
+        <span>사업자등록번호 : 220-88-02594</span>
+        <span>통신판매업신고번호 : 2018-성남분당B-0004<a href="#" title="사업자정보확인" class="btn_arrow"
+            target="_blank">사업자정보확인</a></span>
+        <br />
+        <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+        <span>이메일 : <a href="#" class="btn_footer_mail">melon_info@kakaoent.com</a></span>
+        <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+        <span><a href="#" class="btn_footer_mail" target="_blank">© Kakao Entertainment Corp.</a></span>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

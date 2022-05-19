@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import './color.scss';
+
+.bgBox {
+  padding: 150px 20px 100px; 
+  position: relative;
+  background: url("../images/common/KR-ko-20220103-popsignuptwoweeks-perspective_alpha_website_medium.jpg") center / cover;
+}
+
+.concord-img-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+}
+
+.main {
+  background-color: rgba(0,0,0,.7);
+  position: relative;
+  z-index: 10;
+  padding-top: 100px;
+  max-width: 900px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 4rem 4%;
+}
+
+.titleWrap {
+  .pageTitle {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+}
+
+table.dataTable thead th, table.dataTable thead td {
+  border-bottom: 1px solid #fff;
+}
+.table {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.dataTables_filter {
+  text-align: right;
+  padding-bottom: 1rem;
+  input {
+    display: inline-block;
+    background-color: transparent;
+    border-bottom: #cccccc99;
+  }
+}
+.dataTables_paginate {
+  text-align: right;
+  color: #ccc;
+  a {
+    padding: 1rem;
+    color: #ccc;
+  }
+}
+.con-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.label {
+  padding: .5rem 1rem;
+}
+.form-inline-select,
+.form-select,
+.input-text {
+  max-width: calc(100% - 10px);
+  padding: .5rem 0.8rem;
+  background-color: transparent;
+  border-radius: 2rem;
+  border: 1px solid #aaaaaa99;
+  color: $white;
+  &:focus {
+    background-color: $white;
+    color: #000;
+    border: 0;
+    outline: 0;
+  }
+}
+.form-inline-select {
+  display: inline-block;
+}

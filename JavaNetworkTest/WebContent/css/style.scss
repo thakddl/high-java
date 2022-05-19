@@ -1,0 +1,513 @@
+@charset 'utf-8';
+// font-family: 'Noto Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+$green:#00cf39;
+$olive: #8AC121;
+$font-gray: #888;
+$light-gray:#e0e0e0;
+$dark-gray:#bcbcbc;
+$white: #fff;
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.headerWrap,
+.bodyWrap,
+.footerWrap {
+  margin: auto;
+  padding: 0 20px;
+  width: 1008px;
+}
+.header {
+  border-top: $green solid 3px;
+}
+.underLine {
+  &.light {
+    border-bottom: 1px solid $light-gray;
+  }
+  &.dark {
+    border-bottom: 1px solid $dark-gray;
+  }
+}
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  &.fd-column {
+    flex-direction: column;
+  }
+  &.jc-space-between {
+    justify-content: space-between;
+  }
+  &.ai-center {
+    align-items: center;
+  }
+  &.ai-end {
+    align-items: flex-end;
+  }
+  &.ai-start {
+    align-items: flex-start;
+  }
+}
+.tnb {
+  padding: 10px 0;
+  font-size: 12px;
+  a {
+    color: $font-gray;
+  }
+  &.sideLine {
+    a {
+      padding-right: 10px;
+      margin-right: 8px;
+      border-right: 1px solid $light-gray;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+#homeLogo {
+  a {
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url("../images/logo_melon142x99.png") center no-repeat;
+    width: 150px;
+    height: 100px;
+  }
+}
+.searchBox {
+  width: 100%;
+  margin: 0 15px 0 5px;
+  border-radius: 50px;
+  border: 2px solid $green;
+  padding: 2px 5px 3px 15px;
+  input {
+    display: inline-block;
+  }
+  .searchBar {
+    border: 0;
+    width: calc(100% - 50px);
+    font-size: 12px;
+    color: $light-gray;
+    &:focus {
+      outline: 0;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+  .searchBtn {
+    overflow: hidden;
+    text-indent: -999px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url("//cdnimg.melon.co.kr/resource/image/web/common/btn_search_bar.png") no-repeat 0 -5px;
+    cursor: pointer;
+  }
+}
+.hotBox {
+  width: 60%;
+  font-size: 12px;
+  .label {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0 0.5em;
+    margin-right: 12px;
+    line-height: 1.6;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: $green;
+    color: $white;
+  }
+}
+.bannerBox {
+  a {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+#myMenu,
+#mainMenu {
+  font-weight: 500;
+  a {
+    display: inline-block;
+    padding: .9em 0.5em;
+    // background-color: wheat;
+    margin-right: 8px;
+    font-size: 16px;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+.contentsBox {
+  padding-top: 30px;
+  .titleBox {
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 8px;
+    &.underLine {
+      border-bottom: 1px solid $light-gray;
+      margin-bottom: 15px;
+    }
+    .conTitle {
+      span {
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: normal;
+        color: $font-gray;
+      }
+    }
+    .infoBox {
+      color: $font-gray;
+      font-weight: 300;
+      font-size: 12px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .leftBox {
+    // background-color: $dark-gray;
+    flex-grow: 1;
+    width: 50%;
+  }
+  .rightBox {
+    width: 280px;
+    // background-color: #eee;
+  }
+}
+
+.cardBox {
+  flex-grow: 1;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 5px;
+  &.gap16 {
+    gap: 16px;
+  }
+  .cardItem {
+    flex-grow: 1;
+    width: calc(90% / 3);
+    box-sizing: border-box;
+  }
+}
+.issueItem {
+  img {
+    display: block;
+    width: 100%;
+  }
+  .thumbImg {
+    display: block;
+    position: relative;
+    .playTime {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 10px;
+      padding: 8px;
+      color: $white;
+      overflow: hidden;
+      strong {
+        display: inline-block;
+        height: 16px;
+        width: 20px;
+        text-indent: -999px;
+        overflow: hidden;
+        background: url(//cdnimg.melon.co.kr/resource/image/web/common/bg_playtime.png) no-repeat 0 0;
+      }
+      .time {
+        display: block;
+        padding: 2px 5px 2px 3px;
+        background-color: #00000099;
+      }
+    }
+  }
+  .infoBox {
+    padding-top: 8px;
+    color: $font-gray;
+    font-size: 12px;
+    font-weight: 300;
+    a {
+      color: $font-gray;
+    }
+    .title {
+      font-size: 13px;
+      display: block;
+      padding-bottom: 4px;
+      font-weight: 500;
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
+      &+span {
+        font-size: 12px;
+        display: block;
+        padding-bottom: 4px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+    .color-green {
+      color: $green;
+      padding-right: 6px;
+      &+span {
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 2px;
+        &::before {
+          content: "|";
+          font-size: 10px;
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+}
+.hoverItem {
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+  }
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 36px;
+    width: 100%;
+    background-color: #00000099;
+    a {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      display: block;
+      font-weight: 100;
+      font-size: 13px;
+      color: #FFF;
+      .title {
+        display: none;
+      }
+    }
+  }
+  &:hover {
+    .hoverEffect {
+      transition: 0.1s;
+      padding-bottom: 100%;
+      a {
+        text-align: center;
+        .title {
+          display: block;
+          font-weight: 700;
+          text-decoration: underline;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+#posterSlide {
+  padding: 0 8px;
+}
+#loginBox {
+  background-color: #FBFBFB;
+  border: $light-gray solid 1px;
+  box-sizing: border-box;
+  padding: 25px 15px;
+  margin-bottom: 10px;
+  .titleBox {
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: $font-gray;
+    font-weight: 300;
+    a {
+      color: $font-gray;
+    }
+  }
+}
+.tabList {
+  li {
+    flex-grow: 1;
+    width: 30%;
+    border: $light-gray solid 1px;
+    border-right: 0;
+    font-size: 13px;
+    padding: 8px 0;
+    text-align: center;
+    color: $font-gray;
+    &:last-child {
+      border-right: $light-gray solid 1px;
+    }
+    &.active {
+      border-top: 2px solid $olive;
+      color: $olive;
+    }
+  }
+}
+.rankList {
+  font-size: 13px;
+  .rankItem {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 15px;
+    &.odd {
+      background-color: $white;
+    }
+    .rankNum {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      .rank {
+        font-style: italic;
+        padding-right: 10px;
+        font-size: 15px;
+        color: $olive;
+      }
+      .ranking {
+        font-size: 10px;
+        color: $dark-gray;
+        &::before {
+          content: "-";
+          padding-right: 3px;
+        }
+      }
+    }
+    .rankInfo {
+      flex-grow: 1;
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      font-weight: 400;
+      font-size: 13px;
+      .album {
+        display: none;
+        padding-right: 10px;
+      }
+      .textBox {
+        flex-grow: 1;
+        span {
+          display: inline-block;
+        }
+        .song {
+          width: 50%;
+        }
+        .artist {
+          a {
+            color: $font-gray;
+          }
+        }
+      }
+    }
+    &:hover {
+      .rankNum {
+        .rank {
+          font-size: 24px;
+        }
+      }
+      .rankInfo {
+        .album {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  border-top: 1px solid $dark-gray;
+  font-weight: 300;
+  color: $font-gray;
+  a {
+    color: $font-gray;
+  }
+  .fnb {
+    text-align: right;
+    border-bottom: 1px solid $light-gray;
+    a {
+      display: inline-block;
+      padding: 15px 8px;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  .footerPolicy {
+    font-size: 12px;
+    padding-top: 26px;
+    a {
+      padding-right: 6px;
+      &::after {
+        display: inline-block;
+        content: "";
+        margin-left: 12px;
+        width: 1px;
+        height: 10px;
+        background-color: $light-gray;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+  .footerInfo {
+    font-size: 12px;
+    padding-top: 19px;
+    padding-bottom: 54px;
+    .first {
+      display: inline-block;
+      padding-bottom: 8px;
+      strong {
+        font-weight: 600;
+      }
+    }
+    span {
+      padding-right: 6px;
+      &::after {
+        display: inline-block;
+        content: "";
+        margin-left: 12px;
+        width: 1px;
+        height: 10px;
+        background-color: $light-gray;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.btn {
+  border: 0;
+  &.green {
+    color: $white;
+    background-color: $green;
+  }
+  &.full {
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+  }
+}
+.pr30 {
+  padding-right: 30px;
+}

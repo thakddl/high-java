@@ -1,0 +1,83 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  min-width: 320px;
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
+  padding: 0 4%;
+}
+
+#header .navbar {
+  height: 68px;
+}
+
+#header .navbar .navbar-brand .logo {
+  width: 7rem;
+}
+
+#header .navbar .nav-item {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#header .navbar .nav-item.active {
+  font-weight: bold;
+}
+
+#header .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+#header .navbar-dark .navbar-nav .nav-link:hover {
+  color: #e5e5e5;
+}
+
+#footer {
+  max-width: 980px;
+  margin: 20px auto 0;
+  padding: 3rem 4% 4rem;
+  color: grey;
+}
+
+#footer .copy-text-block {
+  padding-top: .8rem;
+}
+
+#footer .copy-text-block a {
+  color: grey;
+}
+
+.btn.btn-xlg {
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.btn.hasLabel span {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=common.css.map */

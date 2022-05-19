@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="boardMap">
+<resultMap class="boardVo" id="boardMap">
+	<result property="boardNo" column="board_no"/>
+	<result property="boardTitle" column="board_title"/>
+	<result property="boardWriter" column="board_writer"/>
+	<result property="boardDate" column="board_date"/>
+	<result property="boardContent" column="board_content"/>
+</resultMap>
+<select id="getListAll" resultMap="boardMap">
+	select * from jdbc_board
+</select>
+<insert id="insertPost" parameterClass="boardVo">
+	insert into jdbc_board values (board_seq.nextVal, 
+								   #boardTitle#, 
+								   #boardWriter#, 
+								   sysdate, 
+								   #boardContent#)
+</insert>
+<update id="updatePost" parameterClass="boardVo">
+	update jdbc_board set board_title=#boardTitle#, 
+						  board_writer=#boardWriter#, 
+						  board_content=#boardContent#, 
+						  board_date=sysdate 
+			        where board_no=#boardNo#
+</update>
+<select id="checkPost" parameterClass="int" resultClass="int">
+	select count(*) from jdbc_board where board_no = #boardNo#
+</select>
+<delete id="deletePost" parameterClass="int">
+	delete from jdbc_board where board_no = #boardNo#
+</delete>
+<select id="searchPost" resultMap="boardMap">
+	select * from jdbc_board where board_title like '%#word#%' 
+								or board_content like '%#word#%'
+</select>
+</sqlMap>
+
+

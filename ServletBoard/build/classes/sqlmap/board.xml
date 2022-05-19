@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="board">
+
+	<select id="getBoard" parameterClass="String" resultClass="BoardVO">
+		SELECT BOARD_ID
+		 	  ,TITLE
+		 	  ,CONTENT
+		 FROM BOARD
+		WHERE BOARD_ID=#board_id#
+	</select>
+
+	<select id="getBoardList" resultClass="BoardVO">
+		SELECT BOARD_ID
+			  ,TITLE
+			  ,CONTENT
+		 FROM BOARD
+	</select>
+	
+	<update id="insertBoard" parameterClass="BoardVO">
+	INSERT INTO BOARD 
+     VALUES (BOARD_SEQ.NEXTVAL 
+     		,#content#
+     		,#title#)
+	</update>
+	
+	<update id="updatebBoard" parameterClass="BoardVO">
+	UPDATE BOARD 
+       SET TITLE=#title#
+          ,CONTENT=#content#
+     WHERE BOARD_ID=#board_id#
+	</update>
+	<update id="deleteBoard" parameterClass="String">
+	DELETE FROM BOARD
+     WHERE BOARD_ID=#board_id#
+	</update>
+
+</sqlMap>
